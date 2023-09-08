@@ -1,16 +1,17 @@
 import java.util.*;
 public class New {
     public static void main(String args[]){
-//        System.out.println("Hello wrold");
         Scanner sc = new Scanner(System.in);
-        Random rand = new Random();
+        Random rand = new Random(); // using Random class
         int num = rand.nextInt(100);
+        //game... get input and be guessed by user int input...
         while(true){
             System.out.print("Guess the NUmber: ");
             int input = sc.nextInt();
+
             if(input==num){
                 System.out.println("OK!!!");
-                break;
+                break; // not farther check;
             } else if (input > num) {
                 System.out.println("Try with some lesser value...");
             }
